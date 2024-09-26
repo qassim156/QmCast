@@ -13,38 +13,31 @@ Welcome to the QmCast, a web app built with Javascript. Navigate through the app
 The inspiration for creating QmCast came from my desire to get full details about different countries and regions.
 
 ## Technical Challenges
-This project was a significant technical challenge for me, especially since it involved learning and implementing ray casting from scratch. Some of the key challenges I faced included:
+This project was a significant technical challenge for me, especially since it involved data structure and manipulation. Some of the key challenges I faced included:
 
-- **Understanding Ray Casting:** Learning how to use ray casting to render 3D environments from 2D maps was a steep learning curve. I spent a lot of time studying tutorials, reading articles, and experimenting with different approaches.
-- **SDL2 Integration:** Integrating SDL2 for rendering and handling input was another major challenge. I encountered several issues with setting up the rendering context and handling keyboard events, but persistence and thorough debugging helped me overcome these obstacles.
-- **Optimizing Performance:** Ensuring the game runs smoothly required careful optimization. I had to balance rendering quality with performance, making sure the game could run on different hardware configurations.
+- **Getting Country Data:** Lot of API are very technical to get the right data needed for the program. I spent a lot of time studying tutorials, reading articles, and experimenting with different approaches.
+- **Getting the A{I to work** Ensuring API call get response and manage error so program won't crash.
 
 ## Timeline and Development
-The development of the Maze Game was a journey filled with ups and downs. Here's a brief timeline of the project's development:
+Here's a brief timeline of the project's development:
 
 1. **Week 1:** Initial planning and research. Studied ray casting and set up the project structure.
-2. **Week 2:** Implemented basic ray casting and map rendering. Faced difficulties with SDL2 and C programming.
-3. **Week 3:** Improved rendering quality and added player movement. Started optimizing performance.
-4. **Week 4:** Added textures and improved user interface. Began final testing and debugging.
-5. **Week 5:** Polished the game, fixed remaining bugs, and prepared for deployment.
+2. **Week 2:** working with HTML and CSS and getting right information.
+3. **Week 3:** Graphical user Interface implementation.
+4. **Week 4:** Getting Api to work properly.
+5. **Week 5:** Testing and editing, and prepared for deployment.
 
 ## Future Vision
-I envision several enhancements for the next iteration of the Maze Game:
+I want to make the following improvement to the game:
 
-- **Enhanced Graphics:** Adding more detailed textures and lighting effects to improve visual quality.
-- **Additional Levels:** Creating more complex and varied maze levels to increase replayability.
-- **Sound Effects and Music:** Adding immersive sound effects and background music to enhance the gaming experience.
-- **Multiplayer Mode:** Implementing a multiplayer mode for players to explore mazes together.
-
+- **Responsive Design:** Make program responsive to any device screen.
+- **Add chart:** Add chart to improve user experience on web page.
+- 
 ## Algorithm Details
 The core algorithm behind the Maze Game is ray casting. Here's a detailed explanation of how it works:
 
-1. **Ray Casting:** The game casts rays from the player's viewpoint into the 2D map. Each ray represents a vertical slice of the screen.
-2. **Distance Calculation:** For each ray, the algorithm calculates the distance to the nearest wall. This distance is used to determine the height of the wall slice on the screen.
-3. **Wall Rendering:** Based on the calculated distances, the game renders vertical slices of walls with appropriate heights, creating a 3D illusion.
-4. **Texture Mapping:** The algorithm maps textures to the wall slices, adding detail to the 3D environment.
-
-![Ray Casting Diagram](pics/readme/raycasting.png)
+1. **API** This made me retrieve data from server to feed webpage.
+2. **DOM manipolation:** Editing and manipulation webpage elements and attributes.
 
 ## Screenshots and Visuals
 Here are some screenshots from our project:
@@ -54,38 +47,19 @@ Here are some screenshots from our project:
 ![Custom textures](pics/readme/custom_textures.png)
 
 ## Installation
-To run the Maze Game on your local machine, follow these steps:
+To run QmCast on your local machine, follow these steps:
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/username/maze-game.git
-   cd maze-game
-   ```
-
-2. **Install SDL2 and SDL2_image:**
-   - On Debian-based systems:
-     ```sh
-     sudo apt-get install libsdl2-dev libsdl2-image-dev
-     ```
-   - On macOS using Homebrew:
-     ```sh
-     brew install sdl2 sdl2_image
-     ```
-
-3. **Build the game:**
-   ```sh
-   make
-   ```
+   git clone https://github.com/username/QmCast.git
 
 ## Usage
-To start the Maze Game, run the following command in your terminal:
+**run HTML file / webpage**
+   open the github folder then run html file in browser
 
-```sh
-./maze <game_map.map>
-```
-
-Use WASD to move through the maze, Ctrl + M to turn on the map and ESCAPE to exit the game.
-
+**To get Desired Country Data**
+   Input country name in Serach Bar to get country weather details
+   
 ## Contributing
 We welcome contributions from the community. To contribute to this project, please follow these steps:
 
@@ -105,11 +79,6 @@ We welcome contributions from the community. To contribute to this project, plea
    ```
 6. **Create a new Pull Request.**
 
-## Related Projects
-Here are some related projects that you might find interesting:
-
-- [Raycasting Engine](https://github.com/someuser/raycasting-engine)
-- [SDL2 Game Development](https://github.com/anotheruser/sdl2-game-development)
 
 ## Licensing
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.

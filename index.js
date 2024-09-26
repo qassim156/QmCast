@@ -88,8 +88,6 @@ const getWeatherData = async () => {
       }
     })
 
-
-
     // Using the Promise.all method, wait for both promises to resolve, and save the returned data in a variable
     const data = await Promise.all([currentWeather, forecast])
 
@@ -101,6 +99,8 @@ const getWeatherData = async () => {
     console.log(error)
   }
 }
+
+
 
 // Create a function that returns a cardinal direction based on the degree passed in
 // Hint: Draw a Circle and Visualize each Direction First. It will help... A ton!
@@ -129,7 +129,24 @@ const getDirection = deg => {
  * Update each DOM element with the API data
  */
 const updateDom = data => {
+  // lat = data[0].coord.lat
+  // lon = data[0].coord.lon
+
+  // const currentTime = new Promise(async (resolve, reject) => {
+  //   try {
+  //     const timeApi = await fetch(
+  //       `https://www.timeapi.io/api/time/current/coordinate?latitude=${lat}&longitude=${lon}`,
+  //     )
+
+  //     resolve(await timeApi.json())
+  //   } catch (error) {
+  //     reject()
+  //   }
+  // })
+
+
   console.log('🔥 updating', data)
+  console.log('🔥 updating', data[0])
   // Current temperature
   currentTemperature.innerText = data[0].main.temp.toFixed(1)
 
@@ -197,9 +214,11 @@ const updateDom = data => {
     day: 'numeric',
     year: 'numeric',
   })
-
-  // Call the renderChart function and pass in the list array of the 2nd object in the data array
+  console.log(data[0].coord.lat)
+    // Call the renderChart function and pass in the list array of the 2nd object in the data array
   renderChart(data[1].list)
+
+
 }
 
 // Create a function that renders the chart

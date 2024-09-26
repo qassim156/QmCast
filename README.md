@@ -1,6 +1,5 @@
 # QmCast
 
-![Maze Game Screenshot](pics/readme/maze_logo.png)
 
 ## Introduction
 Welcome to the QmCast, a web app built with Javascript. Navigate through the app, find your way out, and enjoy the thrill of discovery! This project demonstrates the use of API and data manipulation with javascript.
@@ -38,13 +37,6 @@ The core algorithm behind the Maze Game is ray casting. Here's a detailed explan
 
 1. **API** This made me retrieve data from server to feed webpage.
 2. **DOM manipolation:** Editing and manipulation webpage elements and attributes.
-
-## Screenshots and Visuals
-Here are some screenshots from our project:
-
-![Gameplay Screenshot](pics/readme/maze_look.png)
-![Minimap Screenshot](pics/readme/map.png)
-![Custom textures](pics/readme/custom_textures.png)
 
 ## Installation
 To run QmCast on your local machine, follow these steps:

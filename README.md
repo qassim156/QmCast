@@ -5,9 +5,9 @@
 ## Introduction
 Welcome to the QmCast, a web app built with Javascript. Navigate through the app, find your way out, and enjoy the thrill of discovery! This project demonstrates the use of API and data manipulation with javascript.
 
-- **Deployed Site:** [Maze Game](http://example.com)
-- **Final Project Blog Article:** [Maze Game Development Journey](http://example.com/blog)
-- **Author's LinkedIn:** [Author Name](https://www.linkedin.com/in/authorname/)
+- **Deployed Site:** [QmCast](http://example.com)
+- **Final Project Blog Article:** [QmCast Development Journey](http://example.com/blog)
+- **Author's LinkedIn:** [Qassim Adako](https://www.linkedin.com/in/qassim-adako/)
 
 ## Inspiration
 The inspiration for creating QmCast came from my desire to get full details about different countries and regions.
